@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment for Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+<!------------------------------------------------------------------CARD HEAD------------------------------------------------------------------------------------->
+    <form>
+        <div class="card m-5">
+            <div class="card-header font-weight-bold">
+                <h1>Payment For Example</h1>
+            </div>
+    <!------------------------------------------------------------------CARD HEAD------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------CARD BODY------------------------------------------------------------------------------------->
+            <div class="card-body">
+                <div class="">
+                    <div class="alert alert-danger" role="alert">
+                        <p>Some fields are missing.</p> 
+                    </div>
+                    <div class="card-text">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label>Credit card</label>
+                                    <input type="text" class="form-control" id="inputEmail4" maxlength="16"  placeholder="0000 0000 0000 0000" required>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label>CVC</label>
+                                    <input type="text" class="form-control" id="inputPassword4" placeholder="0000" required>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label>Amount</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-dollar-sign"></i>
+                                        <input pattern="^\d*(\.\d{0,2})?$" value="" data-type="currency" placeholder="Amount" class="form-control" id="inputAmount" required>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-12">
+                                <label>Name</label>
+                                <input type="text" class="form-control" id="form-submit" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>New York</option>
+                                <option>Miami</option>
+                                <option>Florida</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Zip Code</label>
+                            <input type="text" class="form-control" maxlength="5" id="inputZip" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-4">
+                            <label for="payment-method" id="sumadre">We Accept:</label>
+                            <div class="col-5 colum border rounded justify-content-around bg-secondary text-white pr-1">
+                                <input type="radio" name="payment-method"id="sumadre">
+                                <i class="far fa-credit-card ml-1"></i>
+                                <input type="radio" name="payment-method"id="sumadre">
+                                <i class="fab fa-cc-visa"></i>
+                                <input type="radio" name="payment-method"id="sumadre">
+                                <i class="fab fa-cc-diners-club"></i>
+                            </div>
+                        </div>  
+                        <div class="form-group col-6 offset-2">
+                            <label for="texto-title">Message</label>
+                            <textarea class="form-control" name="texto" id="texto-title" cols="30"></textarea>
+                            <small class="form-text text-muted">Add any notes here.</small>
+                        </div>
+                    </div>
+    <!------------------------------------------------------------------CARD BODY--------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------CARD FOOTER------------------------------------------------------------------------------------->
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="reset" class="btn btn-secondary mr-1">cancel</button>
+                        <button type="submit" class="btn btn-primary" id="form-submit">send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+</body>
+</html>
